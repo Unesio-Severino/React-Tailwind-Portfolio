@@ -1,16 +1,18 @@
-import Head from 'next/head';
-import { BsFillMoonStarsFill } from 'react-icons/bs';
-import {
-  AiFillGithub,
-  AiFillInstagram,
-  AiFillLinkedin,
-} from "react-icons/ai";
+import Head from "next/head";
+import { BsFillMoonStarsFill } from "react-icons/bs";
+import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
 
 import Image from "next/image";
 import deved from "../public/dev-ed-wave.png";
 import design from "../public/design.png";
 import code from "../public/code.png";
 import consulting from "../public/consulting.png";
+import web1 from "../public/web1.png";
+import web2 from "../public/web2.png";
+import web3 from "../public/web3.png";
+import web4 from "../public/web4.png";
+import web5 from "../public/web5.png";
+import web6 from "../public/web6.png";
 
 export default function Home() {
   return (
@@ -23,7 +25,7 @@ export default function Home() {
 
       {/* PROFILE */}
 
-      <main className="bg-white px-10">
+      <main className="bg-white px-10 md:px-20 lg:px-40">
         <section className="min-h-screen">
           <nav className="py-10 mb-12 flex justify-between">
             <h1 className="text-xl font-burtons">Unésio Mucutueliua</h1>
@@ -32,17 +34,28 @@ export default function Home() {
                 <BsFillMoonStarsFill className="cursor-pointer text-2xl" />
               </li>
               <li>
-                <a className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8" href="#">Resumo</a>
+                <a
+                  className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
+                  href="#"
+                >
+                  Resumo
+                </a>
               </li>
             </ul>
           </nav>
 
           <div className="text-center p-10">
-            <h2 className="text-6xl py-2 text-teal-600 font-medium">Unésio Mucutueliua</h2>
-            <h3 className="text-2xl py-2">Desenvolvedor web & Desenvolvedor de aplicações.</h3>
-            <p className="text-md py-5 leading-8 text-gray-800">
-              Sou Desenvolvedor web, desenvolvedor de aplicações, jovem criativo e inovador com muita paixão pela tecnologia, desenho.
-              Trabalho com desenvolvimento de softwares deste 2020. Entre em contacto comigo pelos serviços abaixo.
+            <h2 className="text-6xl py-2 text-teal-600 font-medium md:text-6xl">
+              Unésio Mucutueliua
+            </h2>
+            <h3 className="text-2xl py-2 md:text-3xl">
+              Desenvolvedor web & Desenvolvedor de aplicações.
+            </h3>
+            <p className="text-md py-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto">
+              Sou Desenvolvedor web, desenvolvedor de aplicações, jovem criativo
+              e inovador com muita paixão pela tecnologia, desenho. Trabalho com
+              desenvolvimento de softwares deste 2020. Entre em contacto comigo
+              pelos serviços abaixo.
             </p>
           </div>
           <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600">
@@ -51,10 +64,9 @@ export default function Home() {
             <AiFillLinkedin />
           </div>
 
-          <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden">
-            <Image src={deved} layout="fill" objectFit="cover" />
+          <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96">
+            <Image src={deved} layout="fill" objectFit="cover" alt={""} />
           </div>
-
         </section>
 
         {/* SERVICES */}
@@ -62,20 +74,22 @@ export default function Home() {
           <div>
             <h3 className="text-3xl py-1">Serviços que ofereço</h3>
             <p className="text-md py-2 leading-8 text-gray-80">
-              Desde o inicio da minha jornada como programador web,
-              eu ja trabalhei como desenvolvedor freelance e suporte remoto
-              <span className="text-teal-500"> na Inforem,Lda, </span>
-              e colaborei em pequenos <span className="text-teal-500">projetos. </span>
+              Desde o inicio da minha jornada como programador web, eu ja
+              trabalhei como desenvolvedor freelance e suporte remoto
+              <span className="text-teal-500"> na Inforem,Lda, </span>e
+              colaborei em pequenos{" "}
+              <span className="text-teal-500">projetos. </span>
               Mas a maioria deles sao projetos de ideias próprias.
             </p>
             <p className="text-md py-2 leading-8 text-gray-80">
-              Também ofereço serviços de analise, diagnostico e reparação de equipamentos computadores.
+              Também ofereço serviços de analise, diagnostico e reparação de
+              equipamentos computadores.
             </p>
           </div>
 
-          <div>
-            <div className="text-center p-10 shadow-lg rounded-xl my-10">
-              <Image src={design} width={100} height={100} />
+          <div className="lg:flex gap-10">
+            <div className="text-center shadow-lg p-10 rounded-xl my-10">
+              <Image src={design} width={120} height={120} />
               <h3 className="text-lg font-medium pt-8 pb-2">
                 Designs Responsivos
               </h3>
@@ -88,13 +102,14 @@ export default function Home() {
               <p className="text-gray-800 py-1">Figma</p>
             </div>
 
-            <div className="text-center p-10 shadow-lg rounded-xl my-10">
-              <Image src={code} width={100} height={100} />
+            <div className="text-center shadow-lg p-10 rounded-xl my-10">
+              <Image src={code} width={120} height={120} />
               <h3 className="text-lg font-medium pt-8 pb-2">
                 Desenvolvimento Web e Aplicações
               </h3>
               <p className="py-2">
-                Criando soluções, e desenvolvendo aplicações para diversos clientes.
+                Criando soluções, e desenvolvendo aplicações para diversos
+                clientes.
               </p>
               <h4 className="py-4 text-teal-600">Minhas Ferramentas</h4>
               <p className="text-gray-800 py-1">Photoshop</p>
@@ -102,11 +117,9 @@ export default function Home() {
               <p className="text-gray-800 py-1">Figma</p>
             </div>
 
-            <div className="text-center p-10 shadow-lg p-10 rounded-xl my-10">
-              <Image src={consulting} width={100} height={100} />
-              <h3 className="text-lg font-medium pt-8 pb-2">
-                Consultoria
-              </h3>
+            <div className="text-center shadow-lg p-10 rounded-xl my-10">
+              <Image src={consulting} width={120} height={120} />
+              <h3 className="text-lg font-medium pt-8 pb-2">Consultoria</h3>
               <p className="py-2">
                 Criando Belissimos designs que deixam tuas paginas vivas.
               </p>
@@ -115,25 +128,87 @@ export default function Home() {
               <p className="text-gray-800 py-1">Illustrator</p>
               <p className="text-gray-800 py-1">Figma</p>
             </div>
-
           </div>
         </section>
         <section>
           <div>
             <h3 className="text-3xl py-1">Meu Portfolio</h3>
             <p className="text-md py-2 leading-8 text-gray-80">
-              Desde o inicio da minha jornada como programador web,
-              eu ja trabalhei como desenvolvedor freelance e suporte remoto
-              <span className="text-teal-500"> na Inforem,Lda, </span>
-              e colaborei em pequenos <span className="text-teal-500">projetos. </span>
+              Desde o inicio da minha jornada como programador web, eu ja
+              trabalhei como desenvolvedor freelance e suporte remoto
+              <span className="text-teal-500"> na Inforem,Lda, </span>e
+              colaborei em pequenos{" "}
+              <span className="text-teal-500">projetos. </span>
               Mas a maioria deles sao projetos de ideias próprias.
             </p>
             <p className="text-md py-2 leading-8 text-gray-80">
-              Também ofereço serviços de analise, diagnostico e reparação de equipamentos computadores.
+              Também ofereço serviços de analise, diagnostico e reparação de
+              equipamentos computadores.
             </p>
           </div>
+          <div className="flex flex-col gap-11 py-12 lg:flex-row lg:flex-wrap">
+            <div className="basic-1/3 flex-1">
+              <Image
+                src={web1}
+                alt={""}
+                className="rounded-lg object-cover"
+                width={"100%"}
+                height={"100%"}
+                layout="responsive"
+              />
+            </div>
+            <div className="basic-1/3 flex-1">
+              <Image
+                src={web2}
+                alt={""}
+                className="rounded-lg object-cover"
+                width={"100%"}
+                height={"100%"}
+                layout="responsive"
+              />
+            </div>
+            <div className="basic-1/3 flex-1">
+              <Image
+                src={web3}
+                alt={""}
+                className="rounded-lg object-cover"
+                width={"100%"}
+                height={"100%"}
+                layout="responsive"
+              />
+            </div>
+            <div className="basic-1/2 flex-1">
+              <Image
+                src={web4}
+                alt={""}
+                className="rounded-lg object-cover"
+                width={"100%"}
+                height={"100%"}
+                layout="responsive"
+              />
+            </div>
+            <div className="basic-1/2 flex-1">
+              <Image
+                src={web5}
+                alt={""}
+                className="rounded-lg object-cover"
+                width={"100%"}
+                height={"100%"}
+                layout="responsive"
+              />
+            </div>
+            <div className="basic-1/2 flex-1">
+              <Image
+                src={web6}
+                alt={""}
+                className="rounded-lg object-cover"
+                width={"100%"}
+                height={"100%"}
+                layout="responsive"
+              />
+            </div>
+          </div>
         </section>
-
       </main>
     </div>
   );
