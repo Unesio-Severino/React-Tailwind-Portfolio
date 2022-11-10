@@ -3,7 +3,7 @@ import { BsFillMoonStarsFill } from "react-icons/bs";
 import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
 
 import Image from "next/image";
-import deved from "../public/dev-ed-wave.png";
+import deved from "../public/afro-avatar.png";
 import design from "../public/design.png";
 import code from "../public/code.png";
 import consulting from "../public/consulting.png";
@@ -13,7 +13,9 @@ import web3 from "../public/web3.png";
 import web4 from "../public/web4.png";
 import web5 from "../public/web5.png";
 import web6 from "../public/web6.png";
+// import deved from "../public/dev-ed-wave.png";
 import { useState } from "react";
+
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -62,7 +64,7 @@ export default function Home() {
               pelos serviços abaixo.
             </p>
           </div>
-          <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
+          <div className="text-6xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
             <AiFillGithub />
             <AiFillInstagram />
             <AiFillLinkedin />
@@ -76,30 +78,26 @@ export default function Home() {
         {/* SERVICES */}
         <section>
           <div>
-            <h3 className="text-3xl py-1 dark:text-white">Serviços que ofereço</h3>
+            <h3 className="text-3xl py-1 text-teal-600 font-medium dark:text-teal-400 dark:text-white">Meus Serviços</h3>
              <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
               Desde o inicio da minha jornada como programador web, eu ja
               trabalhei como desenvolvedor freelance e suporte remoto
-              <span className="text-teal-500"> na Inforem,Lda, </span>e
-              colaborei em pequenos <span className="text-teal-500">projetos. </span>
-              Mas a maioria deles sao projetos de ideias próprias.
-            </p>
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-              Também ofereço serviços de analise, diagnostico e reparação de
-              equipamentos computadores.
+            e colaborei em pequenos <span className="text-teal-500">projetos. </span>
+              Mas a maioria deles sao projetos de ideias próprias. Também ofereço serviços de analise,
+              diagnostico e reparação de equipamentos computadores.
             </p>
           </div>
 
           <div className="lg:flex gap-10">
             <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1">
               <Image src={design} width={100} height={100} />
-              <h3 className="text-lg font-medium pt-8 pb-2  ">
-                Designs Responsivos
+              <h3 className="text-dark text-lg font-medium pt-8 pb-2  ">
+                <b>Designs Responsivos</b>
               </h3>
               <p className="py-2">
                 Criando Belíssimos designs que deixam tuas paginas super vivas.
               </p>
-              <h4 className="py-4 text-teal-600">Minhas Ferramentas</h4>
+              <h4 className="py-4 text-teal-700">Ferramentas</h4>
               <p className="text-gray-800 py-1">Photoshop</p>
               <p className="text-gray-800 py-1">Illustrator</p>
               <p className="text-gray-800 py-1">Figma</p>
@@ -109,27 +107,29 @@ export default function Home() {
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
               <Image src={code} width={100} height={100} />
               <h3 className="text-lg font-medium pt-8 pb-2">
-                Desenvolvimento Web e Aplicações dos seus sonhos
+                <b>Desenvolvimento Web e Aplicações dos seus sonhos</b>
               </h3>
               <p className="py-2">
                 Criando soluções, e desenvolvendo aplicações para diversos
                 clientes.
               </p>
-              <h4 className="py-4 text-teal-600">Minhas Ferramentas</h4>
-              <p className="text-gray-800 py-1">Photoshop</p>
-              <p className="text-gray-800 py-1">Illustrator</p>
-              <p className="text-gray-800 py-1">Figma</p>
-              <p className="text-gray-800 py-1">Indesign</p>
+              <h4 className="py-4 text-teal-700">Linguagens</h4>
+              <p className="text-gray-800 py-1">React Native</p>
+              <p className="text-gray-800 py-1">Android</p>
+              <p className="text-gray-800 py-1">Bootstrap</p>
+              <p className="text-gray-800 py-1">HTML, CSS</p>
             </div>
 
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
               <Image src={consulting} width={100} height={100} />
-              <h3 className="text-lg font-medium pt-8 pb-2">Consultoria</h3>
+              <h3 className="text-lg font-medium pt-8 pb-2">
+                <b>Treinamentos</b>
+              </h3>
               <p className="py-2">
-                Criando Belissimos designs que deixam tuas paginas vivas.
+                Treinamento de equipes.
               </p>
-              <h4 className="py-4 text-teal-600">Minhas Ferramentas</h4>
-              <p className="text-gray-800 py-1">Photoshop</p>
+              <h4 className="py-4 text-teal-700">Minhas Ferramentas</h4>
+              <p className="text-gray-800 py-1">Analisar</p>
               <p className="text-gray-800 py-1">Illustrator</p>
               <p className="text-gray-800 py-1">Figma</p>
               <p className="text-gray-800 py-1">Indesign</p>
@@ -139,18 +139,11 @@ export default function Home() {
 
         <section className="py-10">
           <div>
-            <h3 className="text-3xl py-1 dark:text-white ">Meu Portofolio</h3>
+            <h3 className="text-3xl py-1 text-teal-700 font-medium dark:text-teal-400dark:text-white">Meu Portfólio</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-              Desde o inicio da minha jornada como programador web, eu ja
-              trabalhei como desenvolvedor freelance e suporte remoto
-              <span className="text-teal-500"> na Inforem,Lda, </span>e
-              colaborei em pequenos{" "}
-              <span className="text-teal-500">projetos. </span>
-              Mas a maioria deles sao projetos de ideias próprias.
-            </p>
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-              Também ofereço serviços de analise, diagnostico e reparação de
-              equipamentos computadores.
+              Sao destacados alguns projectos por mim desenvolvidos,
+              e muitos deles podes encontrar nos meus repositorios
+              <span className="text-teal-500"> Github</span>.
             </p>
           </div>
           <div className="flex flex-col gap-11 py-11 lg:flex-row lg:flex-wrap">
